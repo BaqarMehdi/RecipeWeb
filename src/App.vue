@@ -1,17 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>Recipe</h1>
+    <RecipeSearch /> <!-- Assuming RecipeSearch is the name of your component -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RecipeSearch from '@/components/RecipeSearch.vue'; // Import your RecipeSearch component
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RecipeSearch // Register the RecipeSearch component
   }
-}
+};
 </script>
 
 <style>
